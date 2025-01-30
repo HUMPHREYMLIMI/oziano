@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(226, 36, 36, 0); /* White background */
+    color: rgba(27, 21, 21, 0.829); /* Black text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(230, 222, 222, 0); /* Red header background */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 200px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(14, 12, 12); /* White text for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(202, 49, 49); /* Red border around sections */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light gray background for sections */
+}
+
+section h2 {
+    color: rgb(202, 49, 49); /* Red headings */
+}
+
+footer {
+    background-color: rgb(202, 49, 49); /* Red footer background */
+    color: white; /* White text in footer */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
