@@ -48,7 +48,7 @@ section h2 {
 
 footer {
     background-color: black; /* transperent footer background */
-    text-color:white; /* white  text in footer */
+    text-color:red; /* white  text in footer */
     text-align: center;
     padding: 5px;
     position: center;
