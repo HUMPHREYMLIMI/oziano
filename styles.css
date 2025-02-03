@@ -47,11 +47,11 @@ section h2 {
 }
 
 footer {
-    background-color: rgb(202, 49, 49); /* Red footer background */
+    background-color: rgb(0, 0, 0); /* black footer background */
     color: white; /* White text in footer */
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
-    width: 100%;
+    width: 20%;
     bottom: 0;
 }
