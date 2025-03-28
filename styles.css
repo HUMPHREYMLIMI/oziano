@@ -1,57 +1,135 @@
+/* Import a sci-fi font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
-    background-color: rgba(226, 36, 36, 0); /* White background */
-    color: rgba(27, 21, 21, 0.829); /* Black text for contrast */
-    font-family: Arial, sans-serif;
+    background-color: black; /* Black background for space-like feel */
+    color: white; /* White text for contrast */
+    font-family: 'Orbitron', sans-serif; /* Sci-fi font */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
-    background-color: rgba(230, 222, 222, 0); /* Red header background */
-    padding: 20px;
+    position: relative;
+    padding: 30px;
     text-align: center;
+    background: none; /* No background color, rely on header-bg */
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa'); /* Space background */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Behind header content */
+    filter: brightness(0.7); /* Darken for contrast */
 }
 
 .logo-container img {
-    max-width: 200px; /* Adjust the size of the logo as needed */
+    max-width: 250px; /* Larger logo for impact */
     height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)); /* Red glow */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: rgb(14, 12, 12); /* White text for navigation links */
+    color: white; /* White text */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border: 2px solid red; /* Red neon border on hover */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Red glow */
+    background-color: rgba(255, 0, 0, 0.2); /* Subtle red background */
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid rgb(202, 49, 49); /* Red border around sections */
-    border-radius: 10px;
-    background-color: #f9f9f9; /* Light gray background for sections */
+    padding: 30px;
+    margin: 30px;
+    border: 2px solid red; /* Red neon border */
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent white for sci-fi effect */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red glow */
 }
 
 section h2 {
-    color: rgb(202, 49, 49); /* Red headings */
+    color: red; /* Red headings */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Red glow */
+    text-transform: uppercase;
+}
+
+section h3 {
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* White glow */
+}
+
+section p, section li {
+    color: white;
+    line-height: 1.6;
+}
+
+.services-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-list li {
+    margin-bottom: 40px;
+}
+
+.service-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Red glow */
+    margin: 10px 0;
 }
 
 footer {
-    background-color: black; /* transperent footer background */
-    text-color:red; /* white  text in footer */
+    background-color: rgba(255, 0, 0, 0.2); /* Semi-transparent red */
+    color: white;
     text-align: center;
-    padding: 5px;
-    position: center;
+    padding: 10px;
+    position: fixed;
     width: 100%;
     bottom: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* White glow */
+    border-top: 2px solid red;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red glow */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .logo-container img {
+        max-width: 200px;
+    }
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
 }
